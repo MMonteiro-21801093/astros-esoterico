@@ -1,4 +1,11 @@
- 
+.content{
+  //background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../../assets/images/img1.jpg");
+  min-height: 750px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+} 
 #container1 {
       min-height: 400px; 
      //max-width: 650px; 
@@ -40,6 +47,7 @@
     font-family: "Source Sans Pro", sans-serif;
   }
 h2 { 
+  color: rgba(13, 171, 182, 0.753);
     display: block;
     font-size: 30px;
     padding-top: 10px;
