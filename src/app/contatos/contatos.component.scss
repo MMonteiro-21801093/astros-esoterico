@@ -1,15 +1,9 @@
-#row-1{
-    max-height: 300px; 
-    //max-width: 650px; 
-    //padding-top: 200px;
-    //padding-bottom: 90px;
-      margin-left: 180px;
-      margin-top: 90px;
-      border-radius: 50px;
-    //background: rgba(17, 17, 17, 0.753);   
-}
+ 
+ #col-1{
+  min-height: 50px; 
+ }
 ul.no-bullets {
-    font-size: 10px;
+    font-size: 9px;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -17,13 +11,14 @@ ul.no-bullets {
     color: #000000;
     font-family: Helvetica;
   }
+ 
 #link1 {
-    margin-right: 160px;
+    margin-right: 145px;
     color: #000000;
     font-family: Helvetica;
   }
 #link2 {
-    margin-right: 145px;
+    margin-right: 130px;
     color: #000000;
     font-family: Helvetica;
   }
@@ -33,18 +28,19 @@ li{
     font-family: Helvetica;
     margin: 10px 0;
   }
- .container{
-    max-height: 300px; 
- }
- #contactos{
-    margin-left: 400px;
- }
+  
+ //#contactos{
+   //  margin-left: 400px;
+  //}
  #texto-contato{
-    margin-left: 250px;
+  padding-top: 50px;
+    //margin-left: 250px;
+    width: 300px;
     font-family: Helvetica;
+    color: white;
  }
  .btn {
-    margin-left: 620px;
+    //margin-left: 620px;
     background-color: #6a1e79; /* Green */
     border: none;
     color: white;
@@ -57,4 +53,16 @@ li{
   .btn:hover {
     background-color: #94489b; /* Green */
   }
+  #master-div{
+    background: rgb(7, 8, 36);
+   }
+   .page-holder {
+    min-height: 100vh;
+  }
   
+  .bg-cover {
+    background-size: cover !important;
+  }
+  .fa{
+    color: white;
+  }

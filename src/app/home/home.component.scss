@@ -1,11 +1,20 @@
-.content{
-  //background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../../assets/images/img1.jpg");
-  min-height: 750px;
-  background-position: center;
+ 
+section {
+  min-height: 100vh;
+  background-image: url('/../../../assets/images/fundo.jpg');
   background-repeat: no-repeat;
+  background-position: center;
+
   background-size: cover;
-  position: relative;
-} 
+}
+.page-holder {
+  min-height: 100vh;
+}
+
+.bg-cover {
+  background-size: cover !important;
+}
+
 #container1 {
       min-height: 400px; 
      //max-width: 650px; 

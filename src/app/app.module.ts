@@ -7,10 +7,12 @@ import { MainComponent } from './layouts/main/main.component';
 import { FooterComponent } from './layouts/footer/footer.component';
 import { NgxSpinnerModule } from 'ngx-spinner';
 import { HomeModule } from './home/home.module';
-import { AstrologaModule } from './astrologa/astrologa.module';
 import { ServicosModule } from './servicos/servicos.module';
 import { ContatosModule } from './contatos/contatos.module';
 import { ManuModule } from './manu/manu.module';
+import { HttpClientModule } from '@angular/common/http';
+import { ContatosService } from './contatos/contatos.service';
+import { ToastrModule } from 'ngx-toastr';
 @NgModule({
   declarations: [
     NavbarComponent,
@@ -22,14 +24,17 @@ import { ManuModule } from './manu/manu.module';
     BrowserAnimationsModule,
     AppRoutingModule,
     HomeModule,
-    AstrologaModule,
     ServicosModule,
     ManuModule,
     ContatosModule,
-    NgxSpinnerModule
- 
+    NgxSpinnerModule,
+    HttpClientModule,
+    ToastrModule.forRoot({
+      positionClass: 'toast-top-right',
+      preventDuplicates: true
+    })
   ],
-  providers: [],
+  providers: [ContatosService],
   bootstrap: [MainComponent],
  
 })
