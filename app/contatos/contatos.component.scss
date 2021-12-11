@@ -1,0 +1,68 @@
+ 
+ #col-1{
+  min-height: 50px; 
+ }
+ul.no-bullets {
+    font-size: 9px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 50px;
+    color: #000000;
+    font-family: Helvetica;
+  }
+ 
+#link1 {
+    margin-right: 145px;
+    color: #000000;
+    font-family: Helvetica;
+  }
+#link2 {
+    margin-right: 130px;
+    color: #000000;
+    font-family: Helvetica;
+  }
+
+li{
+    color: #000000;
+    font-family: Helvetica;
+    margin: 10px 0;
+  }
+  
+ //#contactos{
+   //  margin-left: 400px;
+  //}
+ #texto-contato{
+  padding-top: 50px;
+    //margin-left: 250px;
+    width: 300px;
+    font-family: Helvetica;
+    color: white;
+ }
+ .btn {
+    //margin-left: 620px;
+    background-color: #6a1e79; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+  .btn:hover {
+    background-color: #94489b; /* Green */
+  }
+  #master-div{
+    background: rgb(7, 8, 36);
+   }
+   .page-holder {
+    min-height: 100vh;
+  }
+  
+  .bg-cover {
+    background-size: cover !important;
+  }
+  .fa{
+    color: white;
+  }

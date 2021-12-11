@@ -1,0 +1,116 @@
+
+ <div id="master-div" class="page-holder bg-cover">
+ 
+  <div class="container text-center" >
+    <!-- Example row of columns -->
+    <div class="row" id="row-0">
+      <div class="col-md-2" id="col-1">
+
+      </div>
+     
+    </div>
+
+    <div class="row" id="row-1">
+      
+      <div class="col-md-2">
+      </div>
+
+
+      <div class="col-md-2  text-center">
+     
+        <img src="../../../assets/images/manu.jpeg" class="rounded-circle" alt="Random Name" width="255" height="255">
+     
+      </div>
+
+
+      <div class="col-md-6  text-center">
+       <div class="container text-center">
+        <ul class="no-bullets">
+        <!--    <li>  
+           <i   class="fa fa-envelope-o fa-3x" id="link0" aria-hidden="true" > manuela.freirinha@gmail.com</i>    
+            </li>-->
+            <li>
+                <a  id="link1" target="_blank" href="https://www.instagram.com/manuelafreirinha/" >
+                <i class="fa fa-instagram fa-3x"  aria-hidden="true"> manuelafreirinha</i>
+                </a>  
+            </li>
+            <li>
+                <a  id="link2" target="_blank" href="https://www.facebook.com/manuela.freirinha.5" >
+                <i class="fa fa-facebook-official fa-3x" aria-hidden="true"> Manuela Freirinha</i>
+               </a>  
+            </li>
+          </ul>
+        </div>
+       
+      </div>
+
+    </div>
+
+  
+
+  </div> <!-- /container -->
+  <div id="contactos" class="container">
+    <form [formGroup]="sendEmailForm" action="https://mailthis.to/mmonteiro@protonmail.com" method="POST" (ngSubmit)="sendEmail(sendEmailForm.value)" >
+      
+      
+
+ 
+    <div class="row">
+      <div class="col-md-2">
+      </div>
+
+      <div class="col-md-8">
+        <div class="row">
+          <div class="col-sm-12 form-group">
+            <h3 id="texto-contato">Entre em contacto</h3>
+          </div>
+          
+          <div class="col-sm-6 form-group">
+            <input class="form-control" id="inputName"  placeholder="Nome" type="text" 
+            [ngClass]="sendEmailForm.get('name').invalid && (sendEmailForm.get('name').dirty || sendEmailForm.get('name').touched) && sendEmailForm.controls['name'].errors ? 'is-invalid' : ''"
+            formControlName="name"  >
+            <div class="invalid-feedback" *ngIf="sendEmailForm.get('name').invalid && (sendEmailForm.get('name').dirty || sendEmailForm.get('name').touched)">
+              <span *ngIf="sendEmailForm.controls['name'].hasError('required')">Campo obrigatório</span>
+              <span *ngIf="sendEmailForm.controls['name'].hasError('maxlength')">Max length of this field is 50 characters</span>
+            </div>
+          </div>
+          <div class="col-sm-6 form-group">
+            <input class="form-control" id="inputEmail" placeholder="E-mail" type="email"    [ngClass]="sendEmailForm.get('email').invalid && (sendEmailForm.get('email').dirty || sendEmailForm.get('email').touched) && sendEmailForm.controls['email'].errors ? 'is-invalid' : ''"
+            formControlName="email"  >
+            <div class="invalid-feedback" *ngIf="sendEmailForm.get('email').invalid && (sendEmailForm.get('email').dirty || sendEmailForm.get('email').touched)">
+              <span *ngIf="sendEmailForm.controls['email'].hasError('required')">Campo obrigatório<</span>
+              <span *ngIf="sendEmailForm.controls['email'].hasError('maxlength')">Max length of this field is 50 characters</span>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 form-group">
+                <input class="form-control" id="inputSubject"  placeholder="Assunto" type="text"  [ngClass]="sendEmailForm.get('_subject').invalid && (sendEmailForm.get('_subject').dirty || sendEmailForm.get('_subject').touched) && sendEmailForm.controls['_subject'].errors ? 'is-invalid' : ''"
+                formControlName="_subject"  >
+                <div class="invalid-feedback" *ngIf="sendEmailForm.get('_subject').invalid && (sendEmailForm.get('_subject').dirty || sendEmailForm.get('_subject').touched)">
+                  <span *ngIf="sendEmailForm.controls['_subject'].hasError('required')">Campo obrigatório</span>
+                  <span *ngIf="sendEmailForm.controls['_subject'].hasError('maxlength')">Max length of this field is 100 characters</span>
+                </div>
+             </div>
+        </div>  
+    
+        <textarea class="form-control" id="inputComments"  placeholder="Comentários" rows="5"  [ngClass]="sendEmailForm.get('message').invalid && (sendEmailForm.get('message').dirty || sendEmailForm.get('message').touched) && sendEmailForm.controls['message'].errors ? 'is-invalid' : ''"
+        formControlName="message"  >
+        <div class="invalid-feedback" *ngIf="sendEmailForm.get('message').invalid && (sendEmailForm.get('message').dirty || sendEmailForm.get('message').touched)">
+          <span *ngIf="sendEmailForm.controls['message'].hasError('required')">Campo obrigatório</span>
+        </div>
+      </textarea>
+        <br>
+        <div class="row">
+          <div class="col-md-12 form-group">
+            <button class="btn btn-outline-secondary" type="submit" [disabled]="sendEmailForm.invalid || isSendingEmail" >Enviar</button>
+          </div>
+        </div>
+      </div>
+    </div>  
+  </form>
+</div> 
+
+</div>
+
+  
